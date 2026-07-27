@@ -1,0 +1,11 @@
+PUT YOUR PHOTOS IN THIS FOLDER.
+
+The filenames expected by the website are listed in site-data.js.
+You may either:
+1. Rename your photos to match those filenames, OR
+2. Edit the image paths in site-data.js to match your actual filenames.
+
+Example:
+image: "images/my-keychain-photo.jpg"
+
+Supported formats: .jpg, .jpeg, .png, .webp

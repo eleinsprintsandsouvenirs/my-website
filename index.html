@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Elein's Prints & Souvenirs — personalized prints, gifts, invitations, stickers, school projects, and more." />
+  <title>Elein's Prints & Souvenirs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home">
+        <span class="brand-mark">✿</span>
+        <span>Elein's Prints & Souvenirs</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">☰</button>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#services">Services</a>
+        <a href="#pricelist">Price List</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#dti">DTI Permit</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-cta" href="#order">Order Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">CUSTOM PRINTS • PERSONALIZED GIFTS • MADE WITH LOVE</p>
+          <h1>Sweet details for every celebration.</h1>
+          <p class="hero-text">From birthdays and weddings to school projects and business branding, Elein's Prints & Souvenirs creates personalized products with care, creativity, and attention to every detail.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#products">Browse Products</a>
+            <a class="btn btn-outline" href="#order">Order Now</a>
+          </div>
+          <div class="hero-badges">
+            <span>✓ Made to order</span>
+            <span>✓ Packed with care</span>
+            <span>✓ Affordable</span>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="hero-image">
+            <img src="images/souv.png" alt="Elein's Prints & Souvenirs">
+          </div>
+          <div class="floating-note">Made with love in every detail ♡</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="promo-wrap">
+      <div class="container">
+        <div class="promo-card reveal">
+          <div class="promo-icon">🎁</div>
+          <div>
+            <small>A SWEET LITTLE OFFER</small>
+            <h2>Save 10% on your first lovely find</h2>
+            <p>Use code <strong>PINK10</strong> when you message us to order.</p>
+          </div>
+          <a class="promo-arrow" href="#order" aria-label="Order now">→</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="products">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">THE COMPLETE COLLECTION</p>
+          <h2>Find your perfect little something</h2>
+          <p>Browse personalized keepsakes, printing services, school essentials, stickers, invitations, and event souvenirs.</p>
+        </div>
+
+        <div class="filter-bar reveal" id="productFilters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="souvenirs">Souvenirs</button>
+          <button class="filter-btn" data-filter="printing">Printing</button>
+          <button class="filter-btn" data-filter="stickers">Stickers</button>
+          <button class="filter-btn" data-filter="invitations">Invitations</button>
+          <button class="filter-btn" data-filter="school">School</button>
+          <button class="filter-btn" data-filter="sintra">Sintra Board</button>
+        </div>
+
+        <div class="product-grid" id="productGrid"></div>
+      </div>
+    </section>
+
+    <section class="section alt" id="services">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">WHAT WE CAN CREATE</p>
+          <h2>Services made for your ideas</h2>
+        </div>
+        <div class="service-grid">
+          <article class="service-card reveal"><span>🖨️</span><h3>Printing Services</h3><p>Black-and-white and colored printing for school, personal, and business needs.</p></article>
+          <article class="service-card reveal"><span>🎀</span><h3>Personalized Souvenirs</h3><p>Custom keychains, magnets, pocket mirrors, bag tags, and giveaways.</p></article>
+          <article class="service-card reveal"><span>✂️</span><h3>Stickers & Labels</h3><p>Custom sticker labels, waterproof vinyl stickers, and themed sticker sets.</p></article>
+          <article class="service-card reveal"><span>💌</span><h3>Invitations</h3><p>Birthday, wedding, christening, debut, baby shower, and event invitations.</p></article>
+          <article class="service-card reveal"><span>🏫</span><h3>School Projects</h3><p>Name tags, subject labels, tarpapel costumes, headpieces, and project layouts.</p></article>
+          <article class="service-card reveal"><span>🖼️</span><h3>Sintra Board Prints</h3><p>Durable mounted prints with glossy, matte, or glass-effect finishes.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="pricelist">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">CLEAR & AFFORDABLE</p>
+          <h2>Real Price List</h2>
+          <p>Prices may change depending on size, quantity, materials, and custom design requirements.</p>
+        </div>
+
+        <div class="price-layout">
+          <div class="price-card reveal">
+            <h3>Souvenirs & Personalized Items</h3>
+            <div class="price-row"><span>Ref Magnets</span><strong>₱18 each</strong></div>
+            <div class="price-row"><span>Shrink Keychains</span><strong>₱35 each</strong></div>
+            <div class="price-row sub"><span>Additional Head</span><strong>+₱5</strong></div>
+            <div class="price-row"><span>Pocket Mirror Keychain, 58mm</span><strong>₱50</strong></div>
+            <div class="price-row"><span>PVC Bag Tag</span><strong>₱50</strong></div>
+            <div class="price-row"><span>Name Tag — Laminated</span><strong>₱25</strong></div>
+            <div class="price-row"><span>Name Tag — PVC</span><strong>₱35</strong></div>
+            <div class="price-row"><span>3D Milestone Frame</span><strong>₱350</strong></div>
+            <div class="price-row"><span>Sintra Board A4</span><strong>₱130</strong></div>
+          </div>
+
+          <div class="price-card reveal">
+            <h3>Printing, Xerox & Lamination</h3>
+            <div class="price-row"><span>Xerox A4 — B&amp;W / Colored</span><strong>₱2 / ₱4</strong></div>
+            <div class="price-row"><span>Xerox Short — B&amp;W / Colored</span><strong>₱3 / ₱6</strong></div>
+            <div class="price-row"><span>Print A4 — B&amp;W / Colored</span><strong>₱3 / ₱5</strong></div>
+            <div class="price-row"><span>Print Short — B&amp;W / Colored</span><strong>₱4 / ₱8</strong></div>
+            <div class="price-row"><span>Print Long — B&amp;W / Colored</span><strong>₱5 / ₱10</strong></div>
+            <div class="price-row"><span>Scan &amp; Print — B&amp;W / Colored</span><strong>₱4 / ₱6</strong></div>
+            <div class="price-row"><span>Lamination A4</span><strong>₱40</strong></div>
+          </div>
+
+          <div class="price-card reveal">
+            <h3>Special Products & Seasonal Items</h3>
+            <div class="price-row"><span>Sticker Labels</span><strong>From ₱50/set</strong></div>
+            <div class="price-row"><span>Hospital Checklist Sticker Set</span><strong>₱100</strong></div>
+            <div class="price-row"><span>Invitations</span><strong>₱20–₱100</strong></div>
+            <div class="price-row"><span>Nutrition Month Headress</span><strong>₱30</strong></div>
+            <div class="price-row"><span>Nutrition Month Mask</span><strong>₱40</strong></div>
+            <div class="price-row"><span>Tarpapel Costume</span><strong>₱50</strong></div>
+            <div class="price-row"><span>Buwan ng Wika Headress</span><strong>₱30</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="gallery">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">MADE BY ELEIN'S</p>
+          <h2>Gallery of lovely creations</h2>
+          <p>Replace these placeholders with your actual product photos.</p>
+        </div>
+        <div class="gallery-grid" id="galleryGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+    <div class="container about-card reveal">
+
+        <div class="about-photo">
+            <img
+                src="images/fam.png"
+                alt="Ishi - Owner of Elein's Prints & Souvenirs"
+            >
+        </div>
+
+        <div class="about-copy">
+            <p class="eyebrow">BEHIND THE BRAND</p>
+
+            <h2>Hello, I'm Ishi.</h2>
+
+            <h3>About my store</h3>
+            <p>
+                Elein's Prints & Souvenirs is a small creative business
+                offering affordable, personalized products for birthdays,
+                weddings, school projects, gifts, and everyday celebrations.
+            </p>
+
+            <h3>About me</h3>
+            <p>
+                I'm a proud mom and entrepreneur who started this business
+                with a dream of creating meaningful products while building
+                a better future for my family. Every order is carefully
+                designed, printed, assembled, and packed with love.
+            </p>
+
+            <p class="signature">— With love, Ishi ♡</p>
+        </div>
+
+    </div>
+</section>
+
+    <section class="section alt" id="dti">
+      <div class="container dti-grid">
+        <div class="dti-copy reveal">
+          <p class="eyebrow">REGISTERED SMALL BUSINESS</p>
+          <h2>DTI Business Permit</h2>
+          <p>This section helps customers verify that Elein's Prints & Souvenirs is a legitimate registered business.</p>
+          <div class="business-info">
+            <div><span>Business Name</span><strong>Elein's Prints & Souvenirs</strong></div>
+            <div><span>Owner</span><strong>Irish Banas</strong></div>
+            <div><span>Registration Number</span><strong>No. 8377676</strong></div>
+            <div><span>Business Address</span><strong>Binangonan, Rizal</strong></div>
+            <div><span>Status</span><strong class="verified">✓ Registered Business</strong></div>
+          </div>
+        </div>
+
+        <div class="permit-upload reveal">
+  <div class="permit-box">
+    <img
+      id="permitPreview"
+      src="images/dti-preview.jpg"
+      alt="DTI Permit Preview"
+    />
+  </div>
+
+  <div class="permit-actions">
+    <button
+      class="btn btn-primary"
+      type="button"
+      id="viewPermit"
+    >
+      View Permit
+    </button>
+  </div>
+</div>
+    </section>
+
+    <section class="section" id="reviews">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">CUSTOMER LOVE</p>
+          <h2>Kind words from happy customers</h2>
+        </div>
+        <div class="review-grid">
+          <article class="review-card reveal"><div class="stars">★★★★★</div><p>“Ang ganda ng quality at sobrang accommodating. Sulit at maayos ang packaging!”</p><strong>— Happy Customer</strong></article>
+          <article class="review-card reveal"><div class="stars">★★★★★</div><p>“Perfect for my baby's birthday souvenirs. Ang cute ng design at mabilis kausap.”</p><strong>— Mommy Client</strong></article>
+          <article class="review-card reveal"><div class="stars">★★★★★</div><p>“Affordable printing and very clear ang output. Babalik ulit ako.”</p><strong>— Student Customer</strong></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="faq">
+      <div class="container narrow">
+        <div class="section-heading reveal">
+          <p class="eyebrow">HELP CENTER</p>
+          <h2>Frequently asked questions</h2>
+        </div>
+        <div class="faq-list" id="faqList">
+          <details><summary>How do I order?</summary><p>Choose a product, prepare your preferred theme and details, then send your request through the order form or Messenger.</p></details>
+          <details><summary>How long is production?</summary><p>Production time depends on the product, quantity, and current queue. Confirm your deadline before placing an order.</p></details>
+          <details><summary>Do you accept rush orders?</summary><p>Rush orders may be accepted depending on availability and may include an additional fee.</p></details>
+          <details><summary>Can I customize the design?</summary><p>Yes. Most products can be customized with your name, photo, color palette, theme, and preferred wording.</p></details>
+          <details><summary>Do you require a down payment?</summary><p>Payment terms may depend on the order. Customized orders cannot be cancelled once materials and production have started.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="order">
+      <div class="container order-card reveal">
+        <div class="order-intro">
+          <p class="eyebrow">LET'S CREATE</p>
+          <h2>Ready to personalize your order?</h2>
+          <p>Fill out the form with your order details, preferred theme, and special requests. We'll contact you to confirm everything before production.</p>
+        </div>
+
+       <form
+  id="orderForm"
+  class="order-form"
+  action="https://formspree.io/f/xrenrwpz"
+  method="POST"
+  enctype="multipart/form-data"
+>
+  <div class="field">
+    <label for="name">Full Name</label>
+    <input id="name" name="Full Name" required />
+  </div>
+
+  <div class="field">
+    <label for="phone">Phone Number</label>
+    <input id="phone" name="Phone Number" required />
+  </div>
+
+  <div class="field">
+    <label for="email">Email</label>
+    <input id="email" name="Email" type="email" />
+  </div>
+
+  <div class="field">
+    <label for="product">Product</label>
+    <select id="product" name="Product" required>
+      <option value="">Select a product</option>
+    </select>
+  </div>
+
+  <div class="field">
+    <label for="quantity">Quantity</label>
+    <input
+      id="quantity"
+      name="Quantity"
+      type="number"
+      min="1"
+      value="1"
+      required
+    />
+  </div>
+
+  <div class="field">
+    <label for="deadline">Needed Date</label>
+    <input
+      id="deadline"
+      name="Needed Date"
+      type="date"
+    />
+  </div>
+
+  <div class="field full">
+    <label for="theme">Preferred Theme / Color</label>
+    <input
+      id="theme"
+      name="Preferred Theme or Color"
+      placeholder="Example: pink floral, Roblox, Hello Kitty"
+    />
+  </div>
+
+  <div class="field full">
+    <label for="details">Special Instructions</label>
+    <textarea
+      id="details"
+      name="Special Instructions"
+      rows="5"
+      placeholder="Names, sizes, wording, finish, and other details"
+    ></textarea>
+  </div>
+
+  <div class="field full">
+    <label for="reference">Upload Reference Image</label>
+    <input
+      id="reference"
+      name="Reference Image"
+      type="file"
+      accept="image/png, image/jpeg"
+    />
+  </div>
+
+  <input
+    type="hidden"
+    name="_subject"
+    value="New Order Inquiry - Elein's Prints & Souvenirs"
+  />
+
+  <button class="btn btn-light full" type="submit">
+    Submit Order Inquiry
+  </button>
+</form>
+      </div>
+    </section>
+
+    <section class="section alt" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-card reveal">
+          <p class="eyebrow">CONTACT US</p>
+          <h2>Let's make something lovely</h2>
+          <p>Replace the details below with your official business contact information.</p>
+          <div class="contact-list">
+            <a href="#">Facebook: Eleins Prints and Souvenirs</a>
+            <a href="#">Messenger: m.me/eleinsprintsandsouvenirs</a>
+            <a href="mailto:hello@example.com">Email: irishjoybanas@gmail.com</a>
+            <a href="tel:+630000000000">Phone: +63 9524705425</a>
+            <span>Location: Binangonan, Rizal</span>
+            <span>Business Hours: Monday–Saturday, 9:00 AM–12:00 AM</span>
+          </div>
+
+      <div class="map-placeholder reveal">
+
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d591.0044162180656!2d121.20272014110171!3d14.507349424727648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c1005a6abbcd%3A0x9ee60f85314f3877!2sLimalima%20hauz!5e0!3m2!1sen!2sph!4v1785175856426!5m2!1sen!2sph"
+        width="100%"
+        height="350"
+        style="border:0; border-radius:20px;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+</div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="#top"><span class="brand-mark">✿</span><span>Elein's Prints & Souvenirs</span></a>
+        <p>Personalized with care and a little bit of pink.</p>
+      </div>
+      <div><h4>Quick Links</h4><a href="#products">Products</a><a href="#pricelist">Price List</a><a href="#about">About</a><a href="#dti">DTI Permit</a></div>
+      <div><h4>Order & Support</h4><a href="#order">Order Form</a><a href="#faq">FAQs</a><a href="#contact">Contact</a></div>
+    </div>
+    <div class="container footer-bottom">© <span id="year"></span> Elein's Prints & Souvenirs. All rights reserved.</div>
+  </footer>
+
+  <a class="floating-order" href="#order">Order Now</a>
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <div class="modal" id="productModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" data-close-modal aria-label="Close">×</button>
+      <div class="modal-image image-slot" id="modalImage"><span>PRODUCT PHOTO</span></div>
+      <div class="modal-body">
+        <p class="eyebrow" id="modalCategory"></p>
+        <h2 id="modalTitle"></h2>
+        <p id="modalDescription"></p>
+        <strong class="modal-price" id="modalPrice"></strong>
+        <a class="btn btn-primary" href="#order" id="modalOrderBtn">Inquire Now</a>
+      </div>
+    </div>
+  </div>
+</div>   <!-- END NG PRODUCT MODAL -->
+
+<!-- GALLERY LIGHTBOX -->
+<div class="gallery-lightbox" id="galleryLightbox">
+
+    <button
+        class="gallery-lightbox-close"
+        id="galleryLightboxClose"
+        type="button"
+        aria-label="Close image">
+        ×
+    </button>
+
+    <img
+        id="galleryLightboxImage"
+        src=""
+        alt="Gallery Preview">
+
+</div>
+
+<script src="site-data.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
+

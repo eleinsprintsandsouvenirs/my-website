@@ -216,17 +216,6 @@ if (viewPermitButton) {
   });
 }
 
-// Demo order form
-const orderForm = document.getElementById('orderForm');
-const formMessage = document.getElementById('formMessage');
-orderForm.addEventListener('submit', event => {
-  event.preventDefault();
-  const data = new FormData(orderForm);
-  const name = data.get('name');
-  const product = data.get('product');
-  formMessage.textContent = `Thank you, ${name}! Your inquiry for ${product} is ready. Connect this form to your email or database before publishing.`;
-  orderForm.reset();
-});
 
 document.getElementById('year').textContent = new Date().getFullYear();
 
